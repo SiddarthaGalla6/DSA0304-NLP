@@ -1,6 +1,5 @@
 def dialog_act(sentence):
     text = sentence.lower().strip()
-
     if text.endswith("?"):
         return "QUESTION"
     elif text.startswith(("hi", "hello", "hey")):
@@ -11,12 +10,12 @@ def dialog_act(sentence):
         return "REQUEST"
     else:
         return "STATEMENT"
-
 sentence = input("Enter dialog: ")
 print("Dialog Act:", dialog_act(sentence))
 
-# Sample Input:
-# Enter dialog: How are you?
-#
-# Sample Output:
-# Dialog Act: QUESTION
+
+Input:
+Enter dialog: How are you?
+
+Output:
+Dialog Act: QUESTION
